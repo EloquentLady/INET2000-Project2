@@ -73,16 +73,16 @@ function Todo(props) {
         <div className="btn-group">
         <button
   type="button"
-  className="btn"
+  className="fa fa-pencil"
   onClick={() => setEditing(true)}
   ref={editButtonRef}>
-  Edit <span className="visually-hidden">{props.name}</span>
+  <span className="visually-hidden">{props.name}</span>
 </button>
           <button
             type="button"
-            className="btn btn__danger"
+            className="fa fa-trash"
             onClick={() => props.deleteTask(props.id)}>
-            Delete <span className="visually-hidden">{props.name}</span>
+            <span className="visually-hidden">{props.name}</span>
           </button>
         </div>
       </div>
